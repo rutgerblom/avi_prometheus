@@ -33,7 +33,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: avi-api-proxy-service
+  name: avi-api-proxy
   namespace: observability
   labels:
     app: avi-api-proxy
