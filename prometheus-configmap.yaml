@@ -32,7 +32,7 @@ data:
           action: replace
         static_configs:
         - targets:
-          - avi-api-proxy.observability.svc:8080 ## avi-api-proxy container ip address and port 
+          - avi-api-proxy-service.observability.svc:8080 ## avi-api-proxy container ip address and port 
       - job_name: avi_api_se_specific
         honor_timestamps: true
         params:
@@ -54,7 +54,7 @@ data:
           action: replace
         static_configs:
         - targets:
-          - avi-api-proxy.observability.svc:8080
+          - avi-api-proxy-service.observability.svc:8080
       - job_name: avi_api_se
         honor_timestamps: true
         params:
@@ -74,7 +74,7 @@ data:
           action: replace
         static_configs:
         - targets:
-          - avi-api-proxy.observability.svc:8080
+          - avi-api-proxy-service.observability.svc:8080
       - job_name: avi_api_pool
         honor_timestamps: true
         params:
@@ -94,7 +94,7 @@ data:
           action: replace
         static_configs:
         - targets:
-          - avi-api-proxy.observability.svc:8080
+          - avi-api-proxy-service.observability.svc:8080
       - job_name: avi_api_controller
         honor_timestamps: true
         scrape_interval: 1m
@@ -111,4 +111,4 @@ data:
           action: replace
         static_configs:
         - targets:
-          - avi-api-proxy.observability.svc:8080
+          - avi-api-proxy-service.observability.svc:8080
